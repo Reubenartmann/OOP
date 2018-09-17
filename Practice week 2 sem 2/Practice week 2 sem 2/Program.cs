@@ -9,10 +9,14 @@ namespace Practice_week_2_sem_2
     // This is a Fibonacci and Prime number generator
     class Program
     {
-        public static int Fibonacci(int n)
+        public static int Fibonacci(List<int> _Fibonacci)
         {
+            _Fibonacci = new List<int>(); 
+
+
             int a = 0;
             int b = 1;
+            int n = 0;
             // In N steps compute Fibonacci sequence iteratively.
             for (int i = 0; i < n; i++)
             {
@@ -20,7 +24,12 @@ namespace Practice_week_2_sem_2
                 a = b;
                 b = temp + b;
             }
+            for (int i = 0; i < 100; i++)
+            {
+                _Fibonacci.Add(a);
+            }
             return a;
+           
         }
 
         static void Main()
@@ -34,7 +43,7 @@ namespace Practice_week_2_sem_2
 
 
             bool isPrime = true;
-            Console.WriteLine("Prime Numbers : ");
+            Console.WriteLine("Fibonacci Prime Numbers : ");
             for (int i = 2; i <= 100; i++)
             {
                 for (int j = 2; j <= 100; j++)

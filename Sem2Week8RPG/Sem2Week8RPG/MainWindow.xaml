@@ -1,0 +1,26 @@
+﻿<Window x:Class="Sem2Week8RPG.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sem2Week8RPG"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="LstInventory" HorizontalAlignment="Left" Height="261" Margin="560,78,0,0" VerticalAlignment="Top" Width="177" SelectionChanged="LstInventory_SelectionChanged"/>
+        <Button x:Name="BtnUse" Content="Use" HorizontalAlignment="Left" Margin="560,344,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button x:Name="BtnDrop" Content="Drop" HorizontalAlignment="Left" Margin="662,344,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="LblHealth" Content="Health: " HorizontalAlignment="Left" Margin="365,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,-0.129"/>
+        <Label x:Name="LblLevel" Content="Level: " HorizontalAlignment="Left" Margin="285,35,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtnNorth" Content="North" HorizontalAlignment="Left" Margin="373,299,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.648,3.308"/>
+        <Button x:Name="BtnEast" Content="East" HorizontalAlignment="Left" Margin="427,324,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="-0.369,0.485"/>
+        <Button x:Name="BtnSouth" Content="South" HorizontalAlignment="Left" Margin="373,349,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="BtnWest" Content="West" HorizontalAlignment="Left" Margin="318,324,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="LblAP" Content="Attack: " HorizontalAlignment="Left" Margin="444,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.559,-0.222"/>
+        <Button x:Name="BtnAttack" Content="Attack" HorizontalAlignment="Left" Margin="50,344,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="BtnBlock" Content="Block" HorizontalAlignment="Left" Margin="150,344,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox x:Name="LstEnemies" HorizontalAlignment="Left" Height="261" Margin="50,78,0,0" VerticalAlignment="Top" Width="175"/>
+        <TextBlock x:Name="TxtFeed" HorizontalAlignment="Left" Height="198" Margin="285,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+
+    </Grid>
+</Window>
