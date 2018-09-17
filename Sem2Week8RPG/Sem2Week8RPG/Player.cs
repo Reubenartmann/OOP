@@ -10,7 +10,7 @@ namespace Sem2Week8RPG
     {
         public Player (string Name, string Type, int Level, int Health) : base("Player", "Human", 1, 100)
         {
-
+            this.Name = Name;
         }
 
     }
