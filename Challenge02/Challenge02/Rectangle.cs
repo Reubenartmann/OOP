@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Challenge02
 {
-    class Rectangle
+    public class Rectangle : Quadrilateral
     {
+        public Rectangle(double _Colour, double _Side1, double _Side2, double _Side3, double _Side4) : base(_Colour, _Side1, _Side2, _Side3, _Side4)
+        {
+        }
+        public double GetArea()
+        {
+            return Side1 * Side2;
+        }
+
+        public double GetPerimeter()
+        {
+            return Side1 + Side2 + Side3 + Side4;
+        }
     }
 }

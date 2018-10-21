@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Challenge02
 {
-    interface IShapeData
+    public interface IShapeData
     {
+        double GetPerimeter();
+
+        double GetArea();
+
     }
 }
