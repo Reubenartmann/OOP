@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge02
 {
-    public class RightAngle : Triangle
+    public class RightAngle : Triangle, IShapeData
     {
         public RightAngle(double _Colour, double _Side1, double _Side2, double _Side3) : base(_Colour, _Side1, _Side2, _Side3)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge02
 {
-    public class Circle : Shape
+    public class Circle : Shape, IShapeData
     {
 
         public double PI { get; set; }

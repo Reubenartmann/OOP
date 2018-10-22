@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge02
 {
-    public class Equilateral : Triangle
+    public class Equilateral : Triangle, IShapeData
     {
         public Equilateral(double _Colour, double _Side1, double _Side2, double _Side3) : base(_Colour, _Side1, _Side2, _Side3)
         {
